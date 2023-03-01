@@ -10,7 +10,8 @@ jobs:
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: ruby-head
+        ruby-version: '3.2'
+        bundler-cache: true
     - name: bundle install
       run: |
         bundle config set path 'vendor/bundle'
