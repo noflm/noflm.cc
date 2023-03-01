@@ -4,13 +4,13 @@ on:
       - master
 jobs:
   gh-pages-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 3.2.1
+        ruby-version: ruby-head
     - name: bundle install
       run: |
         bundle config set path 'vendor/bundle'
