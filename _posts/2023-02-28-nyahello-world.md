@@ -2,6 +2,7 @@
 layout: post
 author: noflm
 title: Nyahello, World!
+share_description: これはテスト投稿です。
 ---
 
 にゃっはろ～！
