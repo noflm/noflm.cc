@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+---
+
+<section class="section hero is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                <div class="column is-5">
+                    <figure class="image is-square">
+                        <img src="{{ site.cdn_url }}/images/noflm_icon.webp" alt="noflm_icon">
+                    </figure>
+                </div>
+                <div class="column is-6 is-offset-1">
+                    <h1 class="title is-2">
+                        noflm
+                    </h1>
+                    <h3 class="subtitle">
+                        のふれむです<br>
+                        JP 35P Discord管理人<br>
+                        どこにでもいるごくごく普通の一般人<br>
+                    </h3>
+
+                    {% for item in site.data.socials %}
+                    <a href="{{ item.url }}" class="button" target="_blank">
+                      <span class="icon">
+                        <i class="{{ item.faicon }} fa-lg"></i>
+                      </span>
+                    </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+
+</section>

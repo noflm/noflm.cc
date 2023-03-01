@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container">
+  <div class="section">
+    <div class="columns">
+      <div class="column has-text-centered">
+        <h1 class="title">Blog Posts</h1><br>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="row columns is-multiline">
+      {% for post in site.posts %}
+        <div class="card box">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <a href="{{ post.url }}">
+                <img src="{%if post.share_image%} {{ site.cdn_url }}/images/{{ post.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}" alt="share_image" />
+              </a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="subtitle is-6">{{ post.date | date_to_string }}</p>
+                <p class="title is-4"><a href="{{ post.url }}">{{ post.title }}</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            {% if post.share_description %}
+              {{ post.share_description | strip_html | truncate: 43, '...' }}
+            {% else %}
+              {{ post.content | strip_html | truncate: 43, '...' }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

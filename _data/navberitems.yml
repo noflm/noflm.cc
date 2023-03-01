@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+  faicon: "fas fa-house"
+- name: Blog
+  link: /blog
+  faicon: "fas fa-pen-to-square"

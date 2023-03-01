@@ -1,0 +1,47 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@charset "utf-8";
+@import "utilities/initial-variables";
+
+
+$purple: #8a4d76;
+$pink: #ff6d9a;
+$dark-pink: #57172b;
+$dark-blue: #0acaff;
+$brown: #383833;
+$black: #151313;
+$white:#ebebeb;
+$beige-light:#d1d1cd;
+$beige-lighter:#cacaca;
+
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $dark-pink;
+$primary-invert: $white;
+$link: $pink;
+$link-invert: $white;
+$link-hover: $white;
+
+$background: $brown;
+$border: $beige-light;
+$text: $white;
+$text-invert: $black;
+$text-strong: $white;
+$code: $white;
+$code-background: $brown;
+//$footer-background-color: $black;
+//$footer-color: $beige-light;
+
+$scheme-main: $black;
+$scheme-main-bis: $black;
+$scheme-main-ter: $black;
+$scheme-invert: $white;
+$scheme-invert-bis: $white;
+$scheme-invert-ter: $white;
+
+@import "bulma";

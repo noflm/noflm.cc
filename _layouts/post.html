@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="hero ">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <figure class="image is-16by9">
+            <img src="{%if page.share_image%} {{ site.cdn_url }}/images/{{ page.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}" alt="share_image">
+          </figure>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="content is-medium">
+              <h2 class="subtitle is-4">{{ page.date | date_to_string }}</h2>
+              <h1 class="title">{{ page.title }}</h1>
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
