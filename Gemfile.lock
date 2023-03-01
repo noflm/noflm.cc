@@ -71,6 +71,7 @@ DEPENDENCIES
   jekyll
   jekyll-feed
   jekyll-sitemap
+  sass-embedded
 
 BUNDLED WITH
    2.4.7
