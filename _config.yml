@@ -1,10 +1,13 @@
 title: noflm's website
 description: >-
-  noflmのWebサイト。特に何もないです。
+  noflm(のふれむ)のWebサイト。特に何もない。
 baseurl: ""
 url: "https://noflm.cc"
 cdn_url: "https://noflm.cc/assets/cdn"
-
+markdown: kramdown
+kramdown:
+   input: GFM
+   hard_wrap: false
 
 # Build settings
 theme:

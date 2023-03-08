@@ -4,7 +4,10 @@ description: >-
 baseurl: ""
 url: "http://127.0.0.1:4000"
 cdn_url: "http://127.0.0.1:4000/assets/cdn"
-
+markdown: kramdown
+kramdown:
+   input: GFM
+   hard_wrap: false
 
 # Build settings
 theme:

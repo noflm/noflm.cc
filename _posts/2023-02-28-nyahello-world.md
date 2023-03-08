@@ -12,6 +12,6 @@ share_description: これはテスト投稿です。
 ## Test
 ### Test
 ---
-```
+```python
 print("Nyahello, World!")
 ```
