@@ -62,8 +62,8 @@
       <meta property="og:image" content="{{ site.cdn_url }}/images/{{ page.share_image }}">
       <meta name="twitter:image" content="{{ site.cdn_url }}/images/{{ page.share_image }}">
     {% elsif page.layout == 'post' %}
-      <meta property="og:image" content="{%if page.share_image%} {{ site.cdn_url }}/images/{{ page.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}">
-      <meta name="twitter:image" content="{%if page.share_image%} {{ site.cdn_url }}/images/{{ page.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}">
+      <meta property="og:image" content="{%if page.share_image%} {{ site.cdn_url }}/images/blog/{{ page.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}">
+      <meta name="twitter:image" content="{%if page.share_image%} {{ site.cdn_url }}/images/blog/{{ page.share_image }} {% else %} {{ site.cdn_url }}/images/noflm.cc_OGP.webp {% endif %}">
     {% else %}
       <meta property="og:image" content="{{ site.cdn_url }}/images/noflm.cc_OGP.webp">
       <meta name="twitter:image" content="{{ site.cdn_url }}/images/noflm.cc_OGP.webp">
