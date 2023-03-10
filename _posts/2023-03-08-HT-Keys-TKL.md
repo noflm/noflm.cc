@@ -2,7 +2,7 @@
 layout: post
 author: noflm
 title: HT-Keys-TKLで自作キーボード
-share_description: 'はるさめ氏が制作した自作キーボード用基盤HT-Keys-TKLで人生初の自作キーボードを作ったお話です。'
+share_description: 'はるさめ氏が制作した自作キーボード用基板HT-Keys-TKLで人生初の自作キーボードを作ったお話です。'
 share_image: 2023-03-08-HT-Keys-TKL/OGP.webp
 ---
 
